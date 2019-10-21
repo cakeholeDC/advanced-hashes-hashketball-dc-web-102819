@@ -235,7 +235,7 @@ def big_shoe_rebounds
       end #=> END if attribute == :players
     
     end #=> END team.each
-    puts shoe_sizes.sort
+    puts shoe_sizes
     
   end #=> END game_hash.each
   
