@@ -246,3 +246,31 @@ def big_shoe_rebounds
   
   shoe_sizes[biggest_shoe][:rebounds]
 end
+
+def most_points_scored
+  puts "most_points_scored"
+  points_scored = {}
+  
+  game_hash.each do |side, team|
+    
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          puts player
+          #puts stats[:shoe]
+          points_scored[player] = {}
+          points_scored[player][:points] = stats[:points]
+          points_scored[player][:length] = player.length
+        end #=> END [:players] => data.each
+      end #=> END if attribute == :players
+    
+    end #=> END team.each
+    
+  end #=> END game_hash.each
+  puts points_scored
+  reverse = points_scored.sort_by {|k, v| -v[:points]}
+  most_points = reverse[0][0]
+  puts most_points
+  
+  most_points
+end
