@@ -230,7 +230,7 @@ def big_shoe_rebounds
         data.each do |player, stats|
           puts player
           #puts stats[:shoe]
-          shoe_sizes[player] = player
+          shoe_sizes[player] = {}
           puts shoe_sizes
           shoe_sizes[player][:shoe] = stats[:shoe]
           shoe_sizes[player][:rebounds] = stats[:rebounds]
