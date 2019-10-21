@@ -120,17 +120,16 @@ def num_points_scored(name)
   pp name
   
   game_hash.each do |side, team| # => team[0] = home/away
-    puts "game_hash.each....."
+    puts "game_hash.each..."
     puts side #=> home/away
     puts team #=> team hash data
-    output = ''
     
     team.each do |attribute, data|
-      puts "team.each....."
+      puts "team.each..."
       puts "attribute = #{attribute}"
       
       if attribute == :players
-        puts "attribute is :players....."
+        puts "attribute is :players..."
         
         data.each do |player, stats|
           puts player
@@ -139,9 +138,6 @@ def num_points_scored(name)
         end #=> END [:players].data.each
         
       end #=> END if attribute == :players
-      
     end #=> END team.each
-    
   end #=> END game_hash.each
-
 end #=> END num_points_scored
