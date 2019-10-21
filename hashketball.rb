@@ -348,6 +348,5 @@ def long_name_steals_a_ton?
   puts most_steals[0][0]
   puts longest_name[0][0]
 
-  if longest_name.to_s[0][0] == most_steals[0][0] 
-    return true
+  puts longest_name.to_s[0][0] == most_steals[0][0] 
 end
