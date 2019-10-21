@@ -126,7 +126,7 @@ def num_points_scored(name)
     output = ''
     
     team.each do |attribute, data|
-      if attribute == :players
+      if attribute = :players
         if game_hash[side][attribute][name]
           puts "points = "
           puts game_hash[side][attribute][name][:points]
