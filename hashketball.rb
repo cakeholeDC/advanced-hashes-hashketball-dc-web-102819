@@ -131,7 +131,7 @@ def num_points_scored(name)
         if game_hash[side][attribute][name]
           puts "points = "
           puts game_hash[side][attribute][name][:points]
-          output = game_hash[side][attribute][name][:points]
+          return game_hash[side][attribute][name][:points]
         end
       end
     end
@@ -152,5 +152,5 @@ def num_points_scored(name)
     
     
   end #=> END game_hash.each
-  output
+  #output
 end
