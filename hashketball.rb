@@ -274,7 +274,9 @@ def winning_team
   pp totals
   
   game_hash.each do |side, team|
-    totals[side] = 0
+    totals[side] = {}
+    totals[side][:team_name] = team[:team_name]
+    totals[side][:points] = 0
     
     team.each do |attribute, data|
       if attribute == :players
@@ -282,7 +284,7 @@ def winning_team
           puts "stats:points"
           pp stats[:points]
           puts "total.side.points"
-          totals[side] += stats[:points]
+          totals[side][:points += stats[:points]
           puts totals[side]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
