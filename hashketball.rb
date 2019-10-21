@@ -135,7 +135,7 @@ def num_points_scored(name)
           puts player
           puts stats[:points]
           return stats[:points] if player == name
-        end #=> END [:players].data.each
+        end #=> END [:players] => data.each
         
       end #=> END if attribute == :players
     end #=> END team.each
