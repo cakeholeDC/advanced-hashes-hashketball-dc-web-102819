@@ -342,9 +342,10 @@ def long_name_steals_a_ton
   
   puts player_stats
   reverse = player_stats.sort_by {|k, v| -v[:steals]}
-  mostSteals = reverse[0][0]
-  puts "mostSteals = "
-  puts mostSteals
+  pp reverse
+  #mostSteals = reverse[0][0]
+  #puts "mostSteals = "
+  #puts mostSteals
 
   #return true if player_with_longest_name = most_steals
 end
