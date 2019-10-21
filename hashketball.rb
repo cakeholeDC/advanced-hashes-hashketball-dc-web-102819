@@ -286,11 +286,9 @@ def winning_team
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
-    puts "home ="
+    puts "totals ="
     pp totals
-    puts "away = "
-    pp totals
-
+    
   end #=> END game_hash.each
   
   # reverse = points_scored.sort_by {|k, v| -v[:points]}
