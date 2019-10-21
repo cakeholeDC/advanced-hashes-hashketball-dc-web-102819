@@ -323,7 +323,9 @@ end
 
 def long_name_steals_a_ton?
   puts "long_name_steals_a_ton?"
-    player_stats = {}
+  player_stats = {}
+  
+  longest_name = player_with_longest_name
   
   game_hash.each do |side, team|
     
@@ -346,5 +348,5 @@ def long_name_steals_a_ton?
   puts "mostSteals = "
   puts mostSteals
 
-  true if player_with_longest_name.to_s = most_steals.to_s
+  true if longest_name = most_steals
 end
