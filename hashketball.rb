@@ -348,5 +348,5 @@ def long_name_steals_a_ton?
   puts "mostSteals = "
   puts mostSteals
 
-  true if longest_name = most_steals
+  longest_name = most_steals
 end
