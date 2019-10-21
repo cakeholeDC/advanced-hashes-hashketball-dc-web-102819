@@ -294,7 +294,7 @@ def winning_team
   reverse = totalspoints_scored.sort_by {|k, v| -v}
   most_points = reverse[0][0]
   
-  # most_points
+  puts most_points
 end
 
 def player_with_longest_name
