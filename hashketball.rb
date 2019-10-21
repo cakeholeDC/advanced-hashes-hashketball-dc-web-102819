@@ -350,7 +350,7 @@ def long_name_steals_a_ton?
   puts longest_name
 
   if longest_name.to_s == most_steals.to_s
-    return TRUE
+    return true
   else
-    return FALSE
+    return false
 end
