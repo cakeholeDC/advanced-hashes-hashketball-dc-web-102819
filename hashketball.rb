@@ -294,10 +294,10 @@ def winning_team
     
   end #=> END game_hash.each
   
-  # reverse = points_scored.sort_by {|k, v| -v[:points]}
-  # most_points = reverse[0][0]
+  reverse = totals.sort_by {|k, v| -v[:points]}
+  winning_team = reverse[0][0]
   
-  # most_points
+  totals[most_points][:team_name]
 end
 
 def player_with_longest_name
