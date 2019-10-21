@@ -198,3 +198,21 @@ def player_numbers(team_name)
   end
   numbers.sort
 end
+
+def player_stats(name)
+  puts "player_stats"
+  
+  game_hash.each do |side, team| # => team[0] = home/away
+    
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          puts player
+          puts stats
+          #return stats if player == name
+        end #=> END [:players] => data.each
+      end #=> END if attribute == :players
+    end #=> END team.each
+    
+  end #=> END game_hash.each
+end #=> END player_stats
