@@ -342,11 +342,11 @@ def long_name_steals_a_ton?
     
   end #=> END game_hash.each
   puts player_stats
-  mostSteals = player_stats.sort_by {|k, v| -v[:steals]}
+  most_steals = player_stats.sort_by {|k, v| -v[:steals]}
   longest_name = player_stats.sort_by {|k, v| -v[:length]}
+  
+  puts most_steals
+  puts longest_name
 
-  if longest_name.to_s[0][0] == most_steals[0][0]
-    return true
-  else
-    return false
+  #longest_name.to_s[0][0] == most_steals[0][0]
 end
