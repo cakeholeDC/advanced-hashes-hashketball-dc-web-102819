@@ -164,7 +164,7 @@ def team_colors(team_name)
   puts "team_colors"
   
   game_hash.each do |side, team|
-    puts team[:colors]
+    pp team[:colors]
   end
   
 end
