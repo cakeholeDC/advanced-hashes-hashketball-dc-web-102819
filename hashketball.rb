@@ -245,5 +245,4 @@ def big_shoe_rebounds
   puts biggest_shoe
   
   shoe_sizes[biggest_shoe][:rebounds]
-
 end
