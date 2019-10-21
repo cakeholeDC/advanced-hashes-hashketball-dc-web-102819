@@ -289,8 +289,7 @@ def winning_team
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
-    puts "totals ="
-    pp totals
+
     pp totals[side][:team_name]
     
   end #=> END game_hash.each
