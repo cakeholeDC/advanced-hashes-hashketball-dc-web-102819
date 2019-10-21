@@ -345,7 +345,7 @@ def long_name_steals_a_ton?
   mostSteals = reverse[0][0]
   puts "mostSteals = "
   puts mostSteals
-  puts player_with_longest_name
+  player_with_longest_name
 
   return true if player_with_longest_name = most_steals
 end
