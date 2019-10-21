@@ -282,7 +282,8 @@ def winning_team
           puts "stats:points"
           pp stats[:points]
           puts "total.side.points"
-          pp totals[side] += stats[:points]
+          totals[side] += stats[:points]
+          puts totals[side]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
@@ -291,10 +292,10 @@ def winning_team
     
   end #=> END game_hash.each
   
-  reverse = totals.sort_by {|k, v| -v}
-  most_points = reverse[0][0]
+  # reverse = points_scored.sort_by {|k, v| -v[:points]}
+  # most_points = reverse[0][0]
   
-  most_points
+  # most_points
 end
 
 def player_with_longest_name
