@@ -171,6 +171,11 @@ end
 
 def team_names
   puts "team_names"
+  teams = []
+  game_hash.each do |side, team|
+    teams.push(team[:team_name])
+  end
+  teams
 end
 
 def player_numbers
