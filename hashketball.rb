@@ -280,7 +280,7 @@ def winning_team
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
-          puts totals[side][:points] += stats[:points]
+          puts totals[side][:points]# += stats[:points]
           puts stats[:points]
           #points_scored[player][:points] = stats[:points]
         end #=> END [:players] => data.each
