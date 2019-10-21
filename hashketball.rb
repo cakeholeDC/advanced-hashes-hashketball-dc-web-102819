@@ -340,8 +340,8 @@ def long_name_steals_a_ton
   end #=> END game_hash.each
   
   puts player_stats
-  reverse = player_stats.sort_by {|k, v| -v[:steals]}
-  pp reverse
+  #reverse = player_stats.sort_by {|k, v| -v[:steals]}
+  #pp reverse
   #mostSteals = reverse[0][0]
   #puts "mostSteals = "
   #puts mostSteals
