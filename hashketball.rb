@@ -279,11 +279,10 @@ def winning_team
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
-          puts "total.side.points"
-          pp totals[side] += stats[:points]
           puts "stats:points"
           pp stats[:points]
-          #points_scored[player][:points] = stats[:points]
+          puts "total.side.points"
+          pp totals[side] += stats[:points]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
@@ -292,7 +291,7 @@ def winning_team
     
   end #=> END game_hash.each
   
-  # reverse = points_scored.sort_by {|k, v| -v[:points]}
+  reverse = points_scored.sort_by {|k, v| -v[:points]}
   # most_points = reverse[0][0]
   
   # most_points
