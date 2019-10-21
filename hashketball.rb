@@ -287,9 +287,9 @@ def winning_team
       end #=> END if attribute == :players
     end #=> END team.each
     puts "home ="
-    pp totals[:home]
+    pp totals
     puts "away = "
-    pp totals[:away]
+    pp totals
 
   end #=> END game_hash.each
   
