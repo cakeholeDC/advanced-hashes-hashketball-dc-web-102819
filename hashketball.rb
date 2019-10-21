@@ -231,17 +231,15 @@ def big_shoe_rebounds
           puts player
           #puts stats[:shoe]
           shoe_sizes[player] = {}
-          puts shoe_sizes
           shoe_sizes[player][:shoe] = stats[:shoe]
           shoe_sizes[player][:rebounds] = stats[:rebounds]
-          puts shoe_sizes
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     
     end #=> END team.each
     
   end #=> END game_hash.each
-  #puts shoe_sizes
+  puts shoe_sizes
   #reverse = shoe_sizes.sort_by {|k, v| -v[:shoe]}
   #pp reverse[0][0][:shoe]
   
