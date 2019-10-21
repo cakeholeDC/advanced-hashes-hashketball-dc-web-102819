@@ -323,23 +323,25 @@ end
 
 def long_name_steals_a_ton
   puts "long_name_steals_a_ton"
-  player_stats = {}
+  #player_stats = {}
   
   game_hash.each do |side, team|
+    puts side
     team.each do |attribute, data|
-      if attribute == :players
+      puts data[:team_name]
+      #if attribute == :players
         
-        data.each do |player, stats|
-          puts player
+        #data.each do |player, stats|
+          #puts player
           #player_stats[player] = {}
           #player_stats[player][:steals] = stats[:steals]
-        end #=> END [:players] => data.each
+        #end #=> END [:players] => data.each
         
-      end #=> END if attribute == :players
+      #end #=> END if attribute == :players
     end #=> END team.each
   end #=> END game_hash.each
   
-  puts player_stats
+  #puts player_stats
   #reverse = player_stats.sort_by {|k, v| -v[:steals]}
   #pp reverse
   #mostSteals = reverse[0][0]
