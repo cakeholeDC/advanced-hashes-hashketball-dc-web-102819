@@ -180,15 +180,18 @@ end
 
 def player_numbers
   puts "player_numbers"
+  home = []
+  away = []
+  
   game_hash.each do |side, team|
-    "#{side}Numbers" = []
-    puts "#{side}Numbers"
+    puts "side = "
+    puts side
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
           puts player
           puts stats[:number]
-          "#{side}Numbers".push(stats[:number])
+          side.push(stats[:number])
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
