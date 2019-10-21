@@ -209,7 +209,7 @@ def player_stats(name)
         data.each do |player, stats|
           puts player
           puts stats
-          #return stats if player == name
+          return stats if player == name
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
