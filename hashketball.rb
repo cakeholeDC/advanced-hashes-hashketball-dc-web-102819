@@ -325,8 +325,6 @@ def long_name_steals_a_ton?
   puts "long_name_steals_a_ton?"
   player_stats = {}
   
-  longest_name = player_with_longest_name
-  
   game_hash.each do |side, team|
     
     team.each do |attribute, data|
@@ -344,13 +342,10 @@ def long_name_steals_a_ton?
     
   end #=> END game_hash.each
   puts player_stats
-  reverse = player_stats.sort_by {|k, v| -v[:steals]}
-  mostSteals = reverse[0][0]
-  puts "mostSteals = "
-  puts mostSteals
-  puts longest_name
+  mostSteals = player_stats.sort_by {|k, v| -v[:steals]}
+  longest_name = player_stats.sort_by {|k, v| -v[:length]}
 
-  if longest_name.to_s == most_steals.to_s
+  if longest_name.to_s[0][0] == most_steals[0][0]
     return true
   else
     return false
