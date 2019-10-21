@@ -182,6 +182,7 @@ def player_numbers
   puts "player_numbers"
   game_hash.each do |side, team|
     side = []
+    puts side
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
