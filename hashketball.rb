@@ -301,7 +301,7 @@ def winning_team
 end
 
 def player_with_longest_name
-  puts "most_points_scored"
+  puts "player_with_longest_name"
   points_scored = {}
   
   game_hash.each do |side, team|
