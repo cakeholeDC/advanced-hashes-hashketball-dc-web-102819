@@ -335,6 +335,7 @@ def long_name_steals_a_ton?
           puts player
           #puts stats[:shoe]
           player_stats[player] = {}
+          player_stats[player][:length] = player.length
           player_stats[player][:steals] = stats[:steals]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
