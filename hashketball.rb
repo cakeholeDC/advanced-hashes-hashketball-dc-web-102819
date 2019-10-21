@@ -275,13 +275,14 @@ def winning_team
   
   game_hash.each do |side, team|
     totals[side] = {}
-    pp totals
     
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
-          puts totals[side][:points]# += stats[:points]
-          puts stats[:points]
+          puts "total.side.points"
+          pp totals[side][:points]# += stats[:points]
+          puts "stats:points"
+          pp stats[:points]
           #points_scored[player][:points] = stats[:points]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
