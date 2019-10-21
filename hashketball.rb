@@ -348,5 +348,5 @@ def long_name_steals_a_ton?
   puts "mostSteals = "
   puts mostSteals
 
-  return true if longest_name == most_steals
+  return true if longest_name.to_s == most_steals.to_s
 end
