@@ -239,6 +239,6 @@ def big_shoe_rebounds
   end #=> END game_hash.each
   puts shoe_sizes
   reverse = shoe_sizes.sort_by {|k, v| -v}
-  pp game_reverse[0][0][:shoe]
+  pp game_reverse[0][0]
   
 end
