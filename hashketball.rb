@@ -284,7 +284,7 @@ def winning_team
           puts "stats:points"
           pp stats[:points]
           puts "total.side.points"
-          totals[side][:points += stats[:points]
+          totals[side][:points] += stats[:points]
           puts totals[side]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
