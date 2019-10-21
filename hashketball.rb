@@ -322,24 +322,6 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-  puts "long_name_steals_a_ton"
-  player_stats = {}
   
-  game_hash.each do |side, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player, stats|
-          player_stats[player] = {}
-          player_stats[player][:length] = player.length
-          player_stats[player][:steals] = stats[:steals]
-        end #=> END [:players] => data.each
-      end #=> END if attribute == :players
-    end #=> END team.each
-  end #=> END game_hash.each
   
-  reverse = player_stats.sort_by {|k, v| [k[:steals], k:[:length]]}
-  pp reverse
-  # longest_name = reverse[0][0]
-  
-  # longest_name
 end
