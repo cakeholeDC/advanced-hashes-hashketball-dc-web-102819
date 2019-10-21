@@ -291,8 +291,8 @@ def winning_team
     
   end #=> END game_hash.each
   
-  reverse = points_scored.sort_by {|k, v| -v[:points]}
-  # most_points = reverse[0][0]
+  reverse = totalspoints_scored.sort_by {|k, v| -v}
+  most_points = reverse[0][0]
   
   # most_points
 end
