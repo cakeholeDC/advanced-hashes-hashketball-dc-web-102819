@@ -271,11 +271,11 @@ end
 def winning_team
   puts "winning_team"
   totals = {}
-  puts totals
+  pp totals
   
   game_hash.each do |side, team|
     totals[side] = side
-    puts totals
+    pp totals
     
     team.each do |attribute, data|
       if attribute == :players
