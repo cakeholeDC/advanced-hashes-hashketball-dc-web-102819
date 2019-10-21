@@ -257,7 +257,6 @@ def most_points_scored
         data.each do |player, stats|
           points_scored[player] = {}
           points_scored[player][:points] = stats[:points]
-          points_scored[player][:length] = player.length
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
@@ -278,7 +277,6 @@ def player_with_longest_name
       if attribute == :players
         data.each do |player, stats|
           points_scored[player] = {}
-          points_scored[player][:points] = stats[:points]
           points_scored[player][:length] = player.length
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
@@ -286,7 +284,7 @@ def player_with_longest_name
   end #=> END game_hash.each
   
   reverse = points_scored.sort_by {|k, v| -v[:length]}
-  most_points = reverse[0][0]
+  longest_name = reverse[0][0]
   
-  most_points
+  longest_name
 end
