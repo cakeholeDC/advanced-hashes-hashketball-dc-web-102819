@@ -218,3 +218,23 @@ def player_stats(name)
     
   end #=> END game_hash.each
 end #=> END player_stats
+
+def big_shoe_rebounds
+  puts "big_shoe_rebounds"
+  shoe_sizes = {}
+  
+  game_hash.each do |side, team|
+    
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          puts player
+          puts stats[:points]
+          return stats[:shoe] if player == name
+        end #=> END [:players] => data.each
+      end #=> END if attribute == :players
+    end #=> END team.each
+    
+  end #=> END game_hash.each
+  
+end
