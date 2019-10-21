@@ -233,9 +233,9 @@ def big_shoe_rebounds
           shoe_sizes[player] = stats[:shoe]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
-    puts game_hash.sort
+    
     end #=> END team.each
-    puts shoe_sizes
+    puts shoe_sizes.sort
     
   end #=> END game_hash.each
   
