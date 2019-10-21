@@ -268,6 +268,32 @@ def most_points_scored
   most_points
 end
 
+def winning_team
+  puts "winning_team"
+  totals = {}
+  
+  game_hash.each do |side, team|
+    totals[side] = 0
+
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          points_scored[player] = {}
+          points_scored[player][:points] = stats[:points]
+        end #=> END [:players] => data.each
+      end #=> END if attribute == :players
+    end #=> END team.each
+    puts totals[:home]
+    puts totals[:away]
+
+  end #=> END game_hash.each
+  
+  # reverse = points_scored.sort_by {|k, v| -v[:points]}
+  # most_points = reverse[0][0]
+  
+  # most_points
+end
+
 def player_with_longest_name
   puts "most_points_scored"
   points_scored = {}
