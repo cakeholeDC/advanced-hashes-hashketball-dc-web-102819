@@ -230,7 +230,8 @@ def big_shoe_rebounds
         data.each do |player, stats|
           #puts player
           #puts stats[:shoe]
-          shoe_sizes[player] = stats[:shoe]
+          shoe_sizes[:player_name] = player
+          shoe_sizes[:player_name][player][:shoe] = stats[:shoe]
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     
