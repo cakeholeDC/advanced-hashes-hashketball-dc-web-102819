@@ -187,7 +187,7 @@ def player_numbers
         data.each do |player, stats|
           puts player
           puts stats[:number]
-          side.push() stats[:number]
+          side.push(stats[:number])
         end #=> END [:players] => data.each
       end #=> END if attribute == :players
     end #=> END team.each
