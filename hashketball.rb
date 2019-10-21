@@ -337,7 +337,8 @@ def long_name_steals_a_ton
     end #=> END team.each
   end #=> END game_hash.each
   
-  # reverse = player_stats .sort_by {|k, v| k[:steals]}
+  reverse = player_stats.sort_by {|k, v| [k[:steals], k:[:length]]}
+  pp reverse
   # longest_name = reverse[0][0]
   
   # longest_name
