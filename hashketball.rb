@@ -180,23 +180,20 @@ end
 
 def player_numbers(team_name)
   puts "player_numbers"
-  home = []
-  away = []
-  
+  numbers = []
   game_hash.each do |side, team|
-    puts "side = "
-    puts side
+    
     if team[:team_name] == team_name
       team.each do |attribute, data|
         if attribute == :players
           data.each do |player, stats|
             puts player
             puts stats[:number]
-            side.push(stats[:number])
+            numbers.push(stats[:number])
           end #=> END [:players] => data.each
         end #=> END if attribute == :players
       end #=> END team.each
     end #=> END if [:team_name] == team_name
   end
-  
+  numbers.sort
 end
