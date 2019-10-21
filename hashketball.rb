@@ -190,7 +190,7 @@ def player_numbers(team_name)
             puts player
             puts stats[:number]
             numbers.push(stats[:number])
-            pp numbers.sort
+            pp numbers
           end #=> END [:players] => data.each
         end #=> END if attribute == :players
       end #=> END team.each
