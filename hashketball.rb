@@ -347,6 +347,7 @@ def long_name_steals_a_ton?
   mostSteals = reverse[0][0]
   puts "mostSteals = "
   puts mostSteals
+  puts longest_name
 
   return true if longest_name.to_s == most_steals.to_s
 end
