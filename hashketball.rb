@@ -131,12 +131,15 @@ def num_points_scored(name)
       puts "attribute = #{attribute}"
       if attribute == :players
         puts "attribute is :players....."
-        if game_hash[side][attribute][name]
-          puts "name exists....."
-          puts "points = "
-          pp game_hash[side][attribute][name][:points]
-          return game_hash[side][attribute][name][:points]
+        data.each do |player, stats|
+          puts player
         end
+        # if game_hash[side][attribute][name]
+        #   puts "name exists....."
+        #   puts "points = "
+        #   pp game_hash[side][attribute][name][:points]
+        #   return game_hash[side][attribute][name][:points]
+        # end
       end
     end
     
