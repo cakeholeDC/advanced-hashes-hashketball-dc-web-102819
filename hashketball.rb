@@ -145,7 +145,7 @@ end #=> END num_points_scored
 def shoe_size(name)
   puts "shoe_size"
   
-  game_hash.each do |side, team| # => team[0] = home/away
+  game_hash.each do |side, team|
     
     team.each do |attribute, data|
       if attribute == :players
@@ -202,7 +202,7 @@ end
 def player_stats(name)
   puts "player_stats"
   
-  game_hash.each do |side, team| # => team[0] = home/away
+  game_hash.each do |side, team|
     
     team.each do |attribute, data|
       if attribute == :players
