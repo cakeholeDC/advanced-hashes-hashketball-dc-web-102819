@@ -243,5 +243,6 @@ def big_shoe_rebounds
   reverse = shoe_sizes.sort_by {|k, v| -v[:shoe]}
   biggest_shoe = reverse[0][0]
   puts biggest_shoe
-  
+  puts shoe_sizes[biggest_shoe][:rebounds]
+
 end
