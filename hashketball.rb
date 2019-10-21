@@ -320,3 +320,27 @@ def player_with_longest_name
   
   longest_name
 end
+
+def long_name_steals_a_ton
+  puts "long_name_steals_a_ton"
+  
+  def player_with_longest_name
+  puts "most_points_scored"
+  points_scored = {}
+  
+  game_hash.each do |side, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          points_scored[player] = {}
+          points_scored[player][:length] = player.length
+        end #=> END [:players] => data.each
+      end #=> END if attribute == :players
+    end #=> END team.each
+  end #=> END game_hash.each
+  
+  reverse = points_scored.sort_by {|k, v| -v[:length]}
+  longest_name = reverse[0][0]
+  
+  longest_name
+end
