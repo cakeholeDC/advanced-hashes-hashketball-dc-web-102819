@@ -291,6 +291,7 @@ def winning_team
     end #=> END team.each
     puts "totals ="
     pp totals
+    pp totals[side][:team_name]
     
   end #=> END game_hash.each
   
