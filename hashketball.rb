@@ -118,7 +118,7 @@ end
 def num_points_scored(name)
   puts "num_points_scored"
   pp name
-  puts game_hash[:away][:players][name][:points]
+  #puts game_hash[:away][:players][name][:points]
   
   game_hash.each do |side, team| # => team[0] = home/away
     puts "game_hash.each....."
